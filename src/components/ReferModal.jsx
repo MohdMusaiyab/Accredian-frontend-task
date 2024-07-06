@@ -43,7 +43,7 @@ const ReferModal = ({ isOpen, closeModal, referrerId }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/referral/create', {
+      const response = await axios.post('https://accredian-backend-task-87pi.onrender.com/referral/create', {
         referrer_id: referrerId,
         referee_name: refereeName,
         referee_email: refereeEmail,
